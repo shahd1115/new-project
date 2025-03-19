@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .text {
+            font-size: 20px;
+            font-weight: bold;
+            display: none; 
+        }
+        #text1 { color: red; }
+        #text2 { color: blue; }
+        #text3 { color: green; }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My First Webpage</h1>
+
+   
+    <p id="text1" class="text">Welcome in my first webpage</p>
+    <p id="text2" class="text">My name is Shahd Shrief</p>
+    <p id="text3" class="text">Wish you luck forever</p>
+
+    <!-- click here -->
+    <button onclick="showText()">Show Text</button>
+
+    <script>
+        let step = 0; 
+        function showText() {
+            step++; 
+            if (step === 1) {
+                document.getElementById("text1").style.display = "block";
+            } else if (step === 2) {
+                document.getElementById("text2").style.display = "block";
+            } else if (step === 3) {
+                document.getElementById("text3").style.display = "block";
+            } else {
+                alert("All text is shown!"); 
+            }
+        }
+    </script>
+
+</body>
+</html>
