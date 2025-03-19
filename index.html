@@ -48,11 +48,11 @@
     <p id="text4" class="text">Bye</p>
 
     
-    <button onclick="show TEXT()">click here</button>
+    <button onclick="show Text()">show Text</button>
 
     <script>
         let step = 0; 
-        function SHOW TEXT() {
+        function show Text() {
             step++; 
             if (step === 1) {
                 document.getElementById("text1").style.display = "block";
@@ -60,6 +60,8 @@
                 document.getElementById("text2").style.display = "block";
             } else if (step === 3) {
                 document.getElementById("text3").style.display = "block";
+                } else if (step === 4) {
+                document.getElementById("text4").style.display = "block";
             } else {
                 alert("All text is shown!"); 
             }
