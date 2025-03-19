@@ -21,7 +21,7 @@
         }
         #text1 { color: red; }
         #text2 { color: blue; }
-        #text3 { color: green; }
+        #text3 { color: bink; }
         button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -45,13 +45,14 @@
     <p id="text1" class="text">Welcome in my first webpage</p>
     <p id="text2" class="text">My name is Shahd Shrief</p>
     <p id="text3" class="text">Wish you luck forever</p>
+    <p id="text4" class="text">Bye</p>
 
     
-    <button onclick="showText()">Show Text</button>
+    <button onclick="click here()">click here</button>
 
     <script>
         let step = 0; 
-        function showText() {
+        function click here() {
             step++; 
             if (step === 1) {
                 document.getElementById("text1").style.display = "block";
